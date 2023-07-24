@@ -1,0 +1,15 @@
+Node2D
+ColorRect
+Control
+CollisionShape2D
+Area2D
+Sprite2D
+AnimationPlayer
+RigidBody2D
+StaticBody2D
+AnimatableBody2D
+TileMap
+Node
+AudioStreamPlayer
+CollisionPolygon2D
+GridMap

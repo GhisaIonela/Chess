@@ -1,0 +1,9 @@
+res://chess_pieces/chess_piece.tscn::9af915c611506b71eebd2d82438a7b5b::1690200842::res://.godot/exported/133200997/export-ff5329f87f2609f6a6262b03d8c5d3d2-chess_piece.scn
+res://chess_table/chess_table.tscn::670a6f66327046c3777210ba3f4d350f::1690200855::res://.godot/exported/133200997/export-0aaa2c84e4a2f194841ec83e14db9ed9-chess_table.scn
+res://controllers/move_manager.tscn::247631b73a3caea9ea72b6e6cc19773e::1690200842::res://.godot/exported/133200997/export-0decd75b32a47a22134ebcf9642c246a-move_manager.scn
+res://chess_table/node.tscn::8e38d7fa82d4786915cdbbd38d3bd27d::1689598936::res://.godot/exported/133200997/export-b25f410ac0d91cdecf41dcbf483f032f-node.scn
+res://chess_table/tile_map.tscn::ea758753b3a8240c0bb4de9a70e9a71b::1689608788::res://.godot/exported/133200997/export-d0f61513d6cd1d62dc97be967a767129-tile_map.scn
+res://controllers/chess_move_area.tscn::a2dbc556ca4b8f56e7fe52118af0cbf8::1689881317::res://.godot/exported/133200997/export-8a4be96665b612e7674338382922fd94-chess_move_area.scn
+res://controllers/move_manager_old.tscn::e3bf45a2c3bc473a9e833d83f5651fd1::1689782465::res://.godot/exported/133200997/export-4083925e13bacfc9019be9cfa5c94075-move_manager_old.scn
+res://controllers/available_position.tscn::e39ea374fa8506fc1525b77b3a986d09::1690200842::res://.godot/exported/133200997/export-9fa4a50f5035b9c32784bf12d4b19ff8-available_position.scn
+res://game.tscn::09cfc4d1496bd8db7d77d8520e64576a::1690197614::res://.godot/exported/133200997/export-609f762188a68253d349ec58c4f3a8d3-game.scn

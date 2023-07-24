@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://ih0vk67yc8yc"]
+
+[ext_resource type="Script" path="res://chess_table/chess_table.gd" id="1_dfve5"]
+[ext_resource type="Shader" path="res://shaders/chess_table.gdshader" id="2_bdih8"]
+[ext_resource type="Texture2D" uid="uid://bvywx14sg5u4k" path="res://chess_pieces/textures/tabla-sah.png" id="3_pctt2"]
+[ext_resource type="PackedScene" uid="uid://cefh3dhewgin5" path="res://controllers/move_manager.tscn" id="5_8aeiu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mi5o3"]
+shader = ExtResource("2_bdih8")
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/y_rot = 8.55e-06
+shader_parameter/x_rot = 8.55e-06
+shader_parameter/inset = 0.0
+
+[node name="chess_table" type="Node2D"]
+position = Vector2(64, 64)
+script = ExtResource("1_dfve5")
+
+[node name="ChessTable" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_mi5o3")
+position = Vector2(288, 288)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_pctt2")
+
+[node name="MoveManager" parent="." instance=ExtResource("5_8aeiu")]
+
+[node name="Available_Moves" type="Node2D" parent="MoveManager"]
+
+[node name="Pieces" type="Node2D" parent="MoveManager"]

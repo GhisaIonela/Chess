@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbo0lqegjkewv"]
+
+[ext_resource type="Script" path="res://controllers/move_manager.gd" id="1_h04vf"]
+
+[node name="MoveManager" type="Node"]
+script = ExtResource("1_h04vf")

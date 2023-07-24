@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bv1p7pqbadded"]
+
+[ext_resource type="Script" path="res://controllers/available_position.gd" id="1_dvus0"]
+[ext_resource type="Texture2D" uid="uid://cr0cbcso5rcm5" path="res://textures/highlight.png" id="2_4i2cr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_76ikl"]
+radius = 29.14
+
+[node name="AvailablePosition" type="Node2D"]
+script = ExtResource("1_dvus0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.631373)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_4i2cr")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_76ikl")
+debug_color = Color(0.313726, 0.615686, 0.313726, 0.419608)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://5qyrxgvvnrlp"]
+
+[ext_resource type="PackedScene" uid="uid://ih0vk67yc8yc" path="res://chess_table/chess_table.tscn" id="1_b6sft"]
+[ext_resource type="Script" path="res://game.gd" id="1_i6xsq"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_i6xsq")
+
+[node name="chess_table" parent="." instance=ExtResource("1_b6sft")]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 704.0
+offset_bottom = 704.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 64.0
+offset_right = 680.0
+offset_bottom = 104.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 600.0
+offset_right = 680.0
+offset_bottom = 640.0
+color = Color(0, 1, 0, 1)

@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://ih0vk67yc8yc"]
+
+[ext_resource type="Script" path="res://chess_table/chess_table.gd" id="1_dfve5"]
+[ext_resource type="Texture2D" uid="uid://dlgwl46o3x1r2" path="res://textures/chess_table.png" id="1_eudh5"]
+[ext_resource type="PackedScene" uid="uid://7mr713o2jjms" path="res://chess_pieces/chess_piece.tscn" id="2_4uwoq"]
+
+[node name="chess_table" type="Node2D"]
+script = ExtResource("1_dfve5")
+
+[node name="ChessTable" type="Sprite2D" parent="."]
+position = Vector2(256, 256)
+scale = Vector2(16, 16)
+texture = ExtResource("1_eudh5")
+
+[node name="Pieces" type="Node2D" parent="."]
+
+[node name="Node" type="Node" parent="Pieces"]
+
+[node name="white_rook_1" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(32, 488)
+
+[node name="white_bishop_1" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(96, 488)
+
+[node name="white_knight_1" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(160, 488)
+
+[node name="white_king" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(224, 488)
+
+[node name="white_queen" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(288, 488)
+
+[node name="white_knight_2" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(352, 488)
+
+[node name="white_bishop_2" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(416, 488)
+
+[node name="white_rook_2" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(480, 488)
+
+[node name="white_pawn_1" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(224, 424)
+
+[node name="white_pawn_2" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(160, 424)
+
+[node name="white_pawn_3" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(96, 424)
+
+[node name="white_pawn_4" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(32, 424)
+
+[node name="white_pawn_5" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(288, 424)
+
+[node name="white_pawn_6" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(352, 424)
+
+[node name="white_pawn_7" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(416, 424)
+
+[node name="white_pawn_8" parent="Pieces/Node" instance=ExtResource("2_4uwoq")]
+position = Vector2(480, 424)

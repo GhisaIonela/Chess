@@ -1,0 +1,16 @@
+res://chess_table/chess_table.tscn
+res://controllers/move_manager_old.gd
+res://shaders/selected_chess_piece.gdshader
+res://shaders/chess_table.gdshader
+res://controllers/available_position.tscn
+res://controllers/move_manager.tscn
+res://chess_pieces/chess_piece.tscn
+res://MoveManager2.gd
+res://game.tscn
+res://game.gd
+res://chess_table/TurnManager.gd
+res://controllers/available_position.gd
+res://chess_table/hue_shift.gdshader
+res://shaders/hue_shift.gdshader
+res://shaders/image_processing.gdshader
+res://chess_pieces/chess_piece.gd

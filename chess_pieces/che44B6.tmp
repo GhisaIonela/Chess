@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://7mr713o2jjms"]
+
+[ext_resource type="Script" path="res://chess_pieces/chess_piece.gd" id="1_vmmdw"]
+[ext_resource type="Texture2D" uid="uid://duu3rvl17joql" path="res://textures/chess_pieces.png" id="2_va44c"]
+
+[node name="ChessPiece" type="Node2D"]
+script = ExtResource("1_vmmdw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_va44c")
+hframes = 6
+vframes = 2

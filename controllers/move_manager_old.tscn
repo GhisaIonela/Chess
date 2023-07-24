@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbo0lqegjkewv"]
+
+[ext_resource type="Script" path="res://controllers/move_manager_old.gd" id="1_fe0cd"]
+[ext_resource type="PackedScene" uid="uid://bksp7fc51k5oo" path="res://chess_table/tile_map.tscn" id="2_y6kkl"]
+
+[node name="MoveManagerOld" type="Node2D"]
+script = ExtResource("1_fe0cd")
+
+[node name="TileMap" parent="." instance=ExtResource("2_y6kkl")]
+visible = false
+scale = Vector2(64, 64)
